@@ -1,0 +1,28 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/davep/.conda/envs/django
+
+  added / updated specs:
+    - django
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    django-2.2.5               |           py38_1         4.6 MB
+    sqlparse-0.3.0             |             py_0          31 KB
+    ------------------------------------------------------------
+                                           Total:         4.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  django             pkgs/main/linux-64::django-2.2.5-py38_1
+  pytz               pkgs/main/noarch::pytz-2019.3-py_0
+  sqlparse           pkgs/main/noarch::sqlparse-0.3.0-py_0
+
+
+Proceed ([y]/n)? 
