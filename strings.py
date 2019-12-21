@@ -15,7 +15,7 @@ print(d.title())
 print(d.capitalize())
 #
 # .is
-print(d.isascii())
+# print(d.isascii())
 print(d.isupper())
 
 print(d.istitle())
