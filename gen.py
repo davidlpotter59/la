@@ -31,7 +31,7 @@ fib=gen_fib()
 # print(next(fib))
 # print(next(fib))
 
-print([next(fib) for _ in range(50)][-1])
+print([next(fib) for _ in range(500)][-1])
 
 # lab
 def char_range(start, stop, step=1):

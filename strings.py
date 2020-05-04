@@ -1,8 +1,8 @@
 print(chr(8482))
 print(ord('™'))
 
-for x in range(0,256):
-    print(f'This is the output for this char {x}  ---- {chr(x)}')
+# for x in range(0,256):
+#     print(f'This is the output for this char {x}  ---- {chr(x)}')
 
 print(ord('½'))
 d="dave"
@@ -68,3 +68,58 @@ print('2. This is the output {0}'.format(output)) # python 2.X and 3.X
 template = "Hello, my name is {}, and I really enjoy {}.  Have a nice day"
 print(template.format('David', 'Python'))
 
+myStr = """This is a multiline string
+I hope this actually works.
+this is the last line"""
+
+myStr2 = "This is a String.  I did it myself"
+print(myStr)
+
+for x in range(len(myStr2)):
+    print("myStr2[x] = {0} -- {1} ".format(myStr2[x],ord(myStr2[x])))
+
+# methods on strings
+print("String Methods")
+print(myStr2.find('I'))
+print(myStr2.find('T'))
+print(myStr2.upper())
+print(myStr2.lower())
+print(myStr2.title())
+print(myStr2.swapcase())
+
+myStr3 = "This is a \"quote\" inside of a string"
+print(myStr3)
+
+myBool = None
+
+if myBool:
+    print("True")
+else:
+    print("False")
+
+
+# myVar = 6
+# print(myVar // 2)
+# print(myVar % 2)
+
+# print(myVar.numerator)
+# print(myVar.denominator)
+
+# name = input("What is your name? ")
+# if len(name) >= 6:
+#    print("Your name is long.")
+# elif len(name) == 5:
+#    print("Your name is 5 characters.")
+# elif len(name) >= 4:
+#    print("Your name is 4 or more characters.")
+# elif len(name) == 1:
+#     print("Really, only 1 letter for a name?")
+# else:
+#    print("Your name is short.")
+
+# print(name.upper())
+# print(name.upper()[::-1])
+
+colors = ['red', 'blue', 'orange', 'green', 'yellow']
+warm_colors = [color for color in colors if color in ['red', 'orange', 'yellow']]
+print(warm_colors)

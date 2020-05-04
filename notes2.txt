@@ -1,0 +1,127 @@
+List comprehension
+Generators
+REPL (Python shell) - Read, Evaluate, Print, Loop
+
+""" """ is NOT a comment - it is a string...
+
+Operations (Operators)
++ Addition
+- Subtraction
++= 
+-=
+* Multiplication
+** Power
+% modulus 
+/ division
+// floor division
+
+Booleans
+True (has some kind of value)
+False
+
+Floats
+any number / any number returns a float
+
+4.5e9 == 4.5 * (10 ** 9)
+
+# List comprehension
+# ex.
+colors =['red', 'blue', 'green', 'yellow',]
+uppercae_colors = []
+
+for color in colors:
+    uppercae_colors.append(color.upper())
+
+# This replaces the for loop
+uppercae_colors[color.upper() for color in colors]
+
+# Can be used for filtering
+#  non comprehension way
+
+colors = ['red', 'blue', 'orange', 'green', 'yellow']
+warm_colors=[]
+for color in colors:
+    if color in ['red', 'orange', 'yellow']:
+        warm_colors.append(color)
+
+# list comprehension way
+
+colors = ['red', 'blue', 'orange', 'green', 'yellow']
+warm_colors = [color for color in colors if color in ['red', 'orange', 'yellow']]
+
+# Strings
+There are quite a few of these methods. Here's a list:
+
+isascii - Return True if all characters in the string are ASCII, False otherwise.
+islower - Return True if the string is a lowercase string, False otherwise.
+isupper - Return True if the string is an uppercase string, False otherwise.
+istitle - Return True if the string is a title-cased string (all words capitalized), 
+            False otherwise.
+isspace - Return True if the string is a whitespace string, False otherwise.
+isdecimal - Return True if the string is a decimal string (whole number), False otherwise.
+isdigit - Return True if the string is a digit string (whole number), False otherwise.
+isnumeric - Return True if the string is a numeric string (whole number), False otherwise.
+isalpha - Return True if the string is an alphabetic string, False otherwise.
+isalnum - Return True if the string is an alphanumeric string, False otherwise.
+isidentifier - Return True if the string is a valid Python identifier, False otherwise. 
+                String could be used as a variable, function, or class name.
+isprintable - Return True if the string is printable, False otherwise. 
+                Meaning that if the character can't be printed as-is, then it's not printable. 
+                So escape characters like \n are considered not printable 
+                even though they change how the string is printed.
+
+# String Split
+url = 'https://example.com/users/jimmy
+user = url.split('/')[-1]
+print(user) >> 'jimmy'
+
+phrase = "This is a simple phrase"
+words = phrase.split()
+print(", ".join(words)) >> 'This, is, a, simple, phrase'
+
+# String Join
+lines = ['First line', 'Second line', 'Third line']
+output = '\n'.join(lines)
+print(output)
+>> First line
+>> Second line
+>> Third line
+
+# String Format
+print("Hello, my name is {}, and I really enjoy {}. Have a nice day!".format('Keith', 'Python'))
+>> 'Hello, my name is Keith, and I really enjoy Python. Have a nice day!'
+
+#   If we want to use the same value multiple times within the string, 
+    then we can place the item index within the {} values:
+
+print("Hello, my name is {0}, and I really enjoy {1}. Have a nice day! - {0}".format('Keith', 'Python'))
+>> 'Hello, my name is Keith, and I really enjoy Python. Have a nice day! - Keith')
+
+# elif/else
+name = input("What is your name? ")
+if len(name) >= 6:
+   print("Your name is long.")
+elif len(name) == 5:
+   print("Your name is 5 characters.")
+elif len(name) >= 4:
+   print("Your name is 4 or more characters.")
+else:
+   print("Your name is short.")
+
+# Pass statement 
+When we're first working through a conditional, it's good to handle all cases, 
+even if we don't have an else case that we'd like to run. This is good practice, 
+just to ensure that we're thinking about the whole problem. We can remove it later.
+
+To add an else statement without a body, we'll place a pass statement within. 
+The pass statement is what is known as a null operation. Absolutely nothing happens 
+when we execute a pass statement, but they are useful as a code placeholder:
+
+# running a script stand alone
+#!/usr/bin/env python3.8
+
+# do not forget to change the permissions to at least 555 (read, execute)
+
+# Recursion
+# calling the function within the same function
+

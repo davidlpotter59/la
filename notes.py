@@ -34,5 +34,5 @@ bin(a & b)
 #  0b1000 results
 
 # only one can be True (XOR)
-bin(a ^ b)
+print(bin(a ^ b))
 #  0b0101 results 
